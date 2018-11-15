@@ -1,5 +1,10 @@
-import Dispatcher from './Dispatcher';
+import dispatcher, { showWeather} from './Dispatcher';
 
-export function initialInput (celcius) {
-    Dispatcher(celcius);
+export default (unit) => {
+    dispatcher(unit);
+}
+
+
+export function getWeather () {
+    return showWeather()
 }

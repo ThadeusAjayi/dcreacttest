@@ -1,31 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { initialInput } from './flux/Action';
+import input from './flux/Action';
 
 class App extends Component {
 
+  state = {
+
+  }
+
   componentDidMount () {
-    initialInput("Thadeus");
+    input('metric');
+  }
+
+  _handleUnitChange = () => {
+
   }
 
   render() {
+    console.log()
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="app">
+      <div className="content"></div>
+        
       </div>
     );
   }
