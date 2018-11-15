@@ -1,10 +1,6 @@
-import dispatcher, { showWeather} from './Dispatcher';
+import dispatcher from './Dispatcher';
 
-export default (unit) => {
-    dispatcher(unit);
-}
-
-
-export function getWeather () {
-    return showWeather()
+export default async (unit) => {
+    let res = await dispatcher(unit);
+    return res;
 }

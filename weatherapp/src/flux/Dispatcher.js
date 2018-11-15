@@ -1,10 +1,6 @@
-import store, { weather } from './Store';
+import store from './Store';
 
-export default (unit) => {
-    store(unit);
-}
-
-export function showWeather () {
-    console.log(weather);
-    return weather;
+export default async (unit) => {
+    let res = await store(unit);
+    return res;
 }
