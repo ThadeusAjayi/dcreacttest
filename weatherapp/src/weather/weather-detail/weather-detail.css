@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+  .content {
+    width: 80vw;
+    height: 90vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+    display: grid;
+    grid-column: 1fr auto;
+    grid-row: 1fr 1fr;
+    grid-template-areas: 
+    'sunrise sunset';
+    padding: 2vh;
+  }
+
+  .sunrise {
+    display: grid;
+    grid-area: 'sunrise';
+    justify-content: center;
+  }
+
+  .sunset {
+    display: grid;
+    grid-area: 'sunset';
+    justify-content: center;
+  }

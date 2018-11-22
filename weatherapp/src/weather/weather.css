@@ -1,0 +1,55 @@
+.app {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+  .content {
+    width: 80vw;
+    height: 90vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+    display: grid;
+    grid-column: 1fr auto;
+    grid-row: 1fr 1fr;
+    grid-template-areas: 
+    'temp temp'
+    'location details'
+  }
+  .temp {
+    grid-area: temp;
+    margin: 16px;
+    display: grid;
+    grid-template-areas: 'option cel icon';
+    justify-content: space-around
+  }
+  
+  .temp-text {
+    font-size: 10vh;
+    grid-area: cel;
+  }
+  
+  .image {
+    grid-area: icon;
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  
+  .option {
+    grid-area: option;
+  }
+  
+  .location {
+   grid-area: location; 
+   margin: 16px;
+  }
+  
+  .details {
+    grid-area: details;
+    margin: 16px;
+  }
+  
+  .loc-detail {
+    font-size: 18px;
+    color: peru;
+  }
